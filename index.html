@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="favicon" rel="shortcut icon" href="assets/images/icon.jpg" type="image/x-png">
+    <title>Portfolio |Hamza Nasr</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="templatemo-neural-style.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+<!--
+
+TemplateMo 597 Neural Glass
+
+https://templatemo.com/tm-597-neural-glass
+
+-->
+   
+  <style>
+      .certifications {
+          margin-top: 40px;
+      }
+
+      .certifications h2 {
+          text-align: center;
+          margin-bottom: 20px;
+      }
+
+      .cert-container {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          justify-content: center;
+      }
+
+      .cert-box {
+          width: 114px; /* Adjust as needed */
+          height: 150px; /* Adjust as needed */
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid #ddd;
+          padding: 10px;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+          cursor: pointer;
+          transition: transform 0.2s;
+      }
+
+      .cert-box:hover {
+          transform: scale(1.05);
+      }
+
+      .cert-box img {
+          width: 100%;
+          height: auto;
+          max-height: 100px; /* Ensure images fit within the box */
+          object-fit: contain;
+      }
+
+      .cert-box p {
+          margin-top: 10px;
+          text-align: center;
+          font-size: 11px;
+          line-height: 1.4;
+      }
+
+      .cert-modal {
+          display: none;
+          position: fixed;
+          z-index: 1;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          overflow: auto;
+          background-color: rgba(0,0,0,0.8);
+          justify-content: center;
+          align-items: center;
+      }
+
+      .cert-modal-content {
+          background-color: #fefefe;
+          margin: 15% auto;
+          padding: 20px;
+          border: 1px solid #888;
+          width: 80%;
+          max-width: 600px;
+          text-align: center;
+      }
+
+      .cert-modal img {
+          max-width: 100%;
+          height: auto;
+      }
+
+      .cert-modal .close {
+          color: #aaa;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+      }
+
+      .cert-modal .close:hover,
+      .cert-modal .close:focus {
+          color: black;
+          text-decoration: none;
+          cursor: pointer;
+      }
+  </style>
+</head>
+<body>
+    <!-- Epic Neural Background -->
+    <div class="neural-background"></div>
+    
+    <!-- Floating Geometric Shapes -->
+    <div class="geometric-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <!-- Neural Network Lines -->
+    <div class="neural-lines">
+        <div class="neural-line"></div>
+        <div class="neural-line"></div>
+        <div class="neural-line"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="glass">
+        <nav>
+            <a href="#home" class="logo">
+                
+                HAMZA NASR
+            </a>
+            <ul class="nav-links">
+               
+              <li><a href="#home">À propos</a></li>
+<li><a href="#about">Parcours Professionnel</a></li>
+<li><a href="#education">Éducation</a></li>
+<li><a href="#skills">Compétences</a></li>
+<li><a href="#experience">Projets</a></li>
+<li><a href="#contact" target="_blank" class="external-link">Contact</a></li>
+
+</ul>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </div>
+        </nav>
+       <div class="mobile-nav">
+    <a href="#home">À propos</a>
+    <a href="#about">Parcours Professionnel</a>
+    <a href="#education">Éducation</a>
+    <a href="#skills">Compétences</a>
+    <a href="#experience">Projets</a>
+    <a href="#contact" class="external-link">Contact</a>
+</div>
+
+    </header>
+
+    <!-- Section 1: Hero -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-subtitle">Bienvenue sur mon portfolio</div>
+            
+            
+            <div class="hero-description">
+                <p>Bonjour, Je m'appelle Hamza Nasr.</p>
+            </div>
+
+            <div class="hero-stats">
+               
+                <div>
+
+                
+                     <img  class="hero-stat" src="./images/photo.png" alt="" width="300" style="border-radius: 50%;">
+                </div>
+             
+            </div>
+            <h1>À propos de moi</h1>
+           <p style=" font-size: 1.5rem;color:white">Étudiant en 2ᵉ année de mastère à 3iL Ingénieurs et en cycle ingénieur à ESPRIT dans le cadre d’un double diplôme, je me spécialise en Data Science et développe des compétences solides en développement web.</p>
+<hr> <p style=" font-size: 1.5rem;color:white">Ma formation, centrée sur le management des solutions digitales et des données, me permet d’allier technique et vision managériale pour concevoir et piloter des solutions innovantes et performantes avec un réel impact.</p>
+        <br>
+        <br>
+<h2> Certifications</h2>
+<br><br>
+<div class="cert-container" bis_skin_checked="1">
+                  <!-- Certification 1 -->
+                  <div class="cert-box" data-cert="1" bis_skin_checked="1">
+                      <img src="./assets/images/nvidia.png" alt="Certification 1">
+                      <p data-sr-id="18" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: 0.2s linear, opacity 1s cubic-bezier(0.5, 0, 0, 1) 0.2s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0.2s;">
+                        Getting Started with Deep Learning</p>
+                  </div>
+      
+                  <!-- Certification 2 -->
+                  <div class="cert-box" data-cert="2" bis_skin_checked="1">
+                      <img src="./assets/images/nvidia.png" alt="Certification 2">
+                      <p data-sr-id="19" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: 0.2s linear, opacity 1s cubic-bezier(0.5, 0, 0, 1) 0.2s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0.2s;">
+                      Applications of AI for Anomaly Detection</p>
+                  </div>
+      
+
+                  <div class="cert-box" data-cert="7" bis_skin_checked="1">
+                    <img src="./assets/images/nvidia.png" alt="Certification 7">
+                      <p data-sr-id="18" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: 0.2s linear, opacity 1s cubic-bezier(0.5, 0, 0, 1) 0.2s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0.2s;">
+                        Transformer-Based NLP Applications Intro</p>
+                </div>
+                  <!-- Certification 4 -->
+                  <div class="cert-box" data-cert="4" bis_skin_checked="1">
+                      <img src="./assets/images/ccna.png" alt="Certification 4">
+                      <p data-sr-id="18" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: 0.2s linear, opacity 1s cubic-bezier(0.5, 0, 0, 1) 0.2s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0.2s;">
+                        Switching &amp; Routing Essentials</p>
+                  </div>
+      
+                  <!-- Certification 5 -->
+                  <div class="cert-box" data-cert="5" bis_skin_checked="1">
+                    <div style="width:50%!important">
+                      <img src="./assets/images/365.png" alt="Certification 5" ></div>
+                      <p data-sr-id="18" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: 0.2s linear, opacity 1s cubic-bezier(0.5, 0, 0, 1) 0.2s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0.2s;">
+                        Machine Learning with Support Vector Machines</p>
+                  </div>
+      
+                  <!-- Certification 6 -->
+                  <div class="cert-box" data-cert="6" bis_skin_checked="1">
+                    <div style="width:50%!important">
+                      <img src="./assets/images/365.png" alt="Certification 6" width="50%!important">
+                      </div>
+                      <p data-sr-id="18" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: 0.2s linear, opacity 1s cubic-bezier(0.5, 0, 0, 1) 0.2s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0.2s;">
+                        Certificate of completion - Git and GitHub</p>
+                  </div>
+       <div class="cert-box" data-cert="6" bis_skin_checked="1">
+                    <div style="width:50%!important">
+                      <img src="./assets/images/365.png" alt="Certification 6" width="50%!important">
+                      </div>
+                      <p data-sr-id="18" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: 0.2s linear, opacity 1s cubic-bezier(0.5, 0, 0, 1) 0.2s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0.2s;">
+                        Certificate of completion - Git and GitHub</p>
+                  </div>
+              
+              </div>
+</div>
+    </section>
+ <!-- Section 4: Timeline -->
+    <section class="timeline" id="about">
+  <h2 class="section-title">Parcours Professionnel</h2>
+  <div class="timeline-container">
+    <div class="timeline-line"></div>
+
+    <!-- Stage 1 - ARABSOFT -->
+    <div class="timeline-item">
+      <div class="timeline-content glass">
+        <div class="timeline-year">
+          Été 2022
+          <small style="font-size: 17px; color: #ccc; display: block;">Stage de formation humaine – 1 mois</small>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <h4 style="margin: 0;">Stage – ARABSOFT, Tunis</h4>
+          <img src="./images/logos/arabsoft.png" alt="Logo ARABSOFT" style="height: 30px;">
+        </div>
+        <p>Développement d'une application de gestion des tickets et carnets de tickets avec Microsoft Access.</p>
+        <ul>
+          <li>Conception et développement de l’interface utilisateur</li>
+          <li>Implémentation de la gestion des données et des rapports</li>
+          <li>Collaboration avec l’équipe technique</li>
+        </ul>
+        <p><strong>Compétences :</strong> Access, SQL, UI Design, Gestion de projet</p>
+      </div>
+      <div class="timeline-dot"></div>
+    </div>
+
+    <!-- Stage 2 - TUNISAIR -->
+    <div class="timeline-item">
+      <div class="timeline-content glass">
+        <div class="timeline-year">
+          Été 2023
+          <small style="font-size: 17px; color: #ccc; display: block;">Stage facultatif – 2 mois et 1 semaine</small>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <h4 style="margin: 0;">Stage – TUNISAIR, Tunis</h4>
+          <img src="./images/logos/tunisair.png" alt="Logo TUNISAIR" style="height: 30px;">
+        </div>
+        <p>Conception et développement de deux sites web internes :</p>
+        <ul>
+          <li><strong>Gestion de projets :</strong> création de projets, processus d’approbation multi-niveaux</li>
+          <li><strong>Suivi bancaire :</strong> suivi des entrées, génération de rapports PDF/Excel, impression et archivage</li>
+        </ul>
+        <p><strong>Compétences :</strong> HTML, CSS, JS, PHP, MySQL, PDF export, UX/UI</p>
+      </div>
+      <div class="timeline-dot"></div>
+    </div>
+
+    <!-- Stage 3 - BIAT (1ère partie) -->
+    <div class="timeline-item">
+      <div class="timeline-content glass">
+        <div class="timeline-year">
+          Été 2024
+          <small style="font-size: 17px; color: #ccc; display: block;">Stage d'immersion en entreprise – 1 Mois Et 2 Semaines</small>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <h4 style="margin: 0;">Stage – BIAT, Tunis</h4>
+          <img src="./images/logos/biat.png" alt="Logo BIAT" style="height: 30px;">
+        </div>
+        <p>Développement et mise en place d’une application web pour la gestion médicale du personnel.</p>
+        <ul>
+          <li>Implémentation CRUD avec Symfony</li>
+          <li>Dashboards interactifs pour statistiques et consultations</li>
+          <li>Déploiement en production</li>
+        </ul>
+        <p><strong>Compétences :</strong> Symfony, SQL, Dashboarding, Sécurité web, Déploiement</p>
+      </div>
+      <div class="timeline-dot"></div>
+    </div>
+
+    <!-- Stage 4 - BIAT (2ème partie) -->
+    <div class="timeline-item">
+      <div class="timeline-content glass">
+        <div class="timeline-year">
+          Été 2025
+          <small style="font-size: 17px; color: #ccc; display: block;">Stage d'ingénieur – 2 mois</small>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <h4 style="margin: 0;">Stage – BIAT, Tunis</h4>
+          <img src="./images/logos/biat.png" alt="Logo BIAT" style="height: 30px;">
+        </div>
+        <p>Amélioration de l’application médicale avec des modules avancés d’analyse de données.</p>
+        <ul>
+          <li>Ajout de dashboards dynamiques (BI, DataViz)</li>
+          <li>Implémentation de <strong>clustering machine learning</strong> pour analyser les maladies selon l’âge, l’expérience et le département</li>
+          <li>Correction de bugs et montée en performance</li>
+        </ul>
+        <p><strong>Compétences :</strong> Machine Learning, Clustering, BI Dashboarding, Symfony, DevOps</p>
+      </div>
+      <div class="timeline-dot"></div>
+    </div>
+
+  </div>
+</section>
+    <!-- education section starts -->
+<section class="education" id="education">
+
+
+<h2 class="section-title">Parcours Éducatif</h2>
+    <div class="box-container">
+
+    <div class="box">
+        <div class="image">
+          <img draggable="false" src="assets/images/educat/college.jpg" alt="" width="300" height="300">
+                </div>
+        <div class="content">
+        <h4 style="color:#014e67;font-weight:bold;">Mastère Manager de Solutions Digitales et Data (MS2D)</h4>
+        <p style="color:#e84d0d;">
+          Institut d’Ingénierie Informatique de Limoges | 3iL</p>
+        <p style="color:rgb(34, 109, 0); text-decoration:underline;">2025-2026 | en cours</p>
+        </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+      <img draggable="false" src="assets/images/educat/school.jpg" alt=""  width="300" height="300">
+      </div>
+      <div class="content">
+
+      <h4 style="color:black;font-weight:bold;"> Diplôme d'ingénieur en informatique | Science des données (Data Science)</h4>
+      <p style="color:#c90c0f;" >École Supérieure Privée d'Ingénierie et de Technologie | ESPRIT</p>
+      <p style="color:rgb(34, 109, 0); text-decoration:underline;">2021-2026 | en cours</p>
+      </div>
+    </div>
+
+</div>
+</section>
+<!-- education section ends -->
+
+    <!-- Section: Compétences Hexagonales -->
+<section class="showcase" id="skills">
+    <h2 class="section-title">💡 Compétences</h2>
+    <div class="hexagon-container">
+
+        <div class="hexagon">
+            <div class="hexagon-inner">
+                <div class="hexagon-icon">
+                    <img src="https://img.icons8.com/?size=100&id=M1bt3ZHCANRW&format=png&color=000000" alt="Machine Learning" style="width:50px;">
+                </div>
+                <h4>Machine Learning</h4>
+            </div>
+        </div>
+
+        <div class="hexagon">
+            <div class="hexagon-inner">
+                <div class="hexagon-icon">
+                    <img src="https://img.icons8.com/?size=100&id=gkIpkwOdutWO&format=png&color=000000" alt="Deep Learning" style="width:50px;">
+                </div>
+                <h4>Deep Learning</h4>
+            </div>
+        </div>
+
+        <div class="hexagon">
+            <div class="hexagon-inner">
+                <div class="hexagon-icon">
+                    <img src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000" alt="Python" style="width:50px;">
+                </div>
+                <h4>Python</h4>
+            </div>
+        </div>
+
+        <div class="hexagon">
+            <div class="hexagon-inner">
+                <div class="hexagon-icon">
+                    <img src="https://img.icons8.com/?size=100&id=UGYn5TapNioV&format=png&color=000000" alt="PHP" style="width:50px;">
+                </div>
+                <h4>PHP</h4>
+            </div>
+        </div>
+
+        <div class="hexagon">
+            <div class="hexagon-inner">
+                <div class="hexagon-icon">
+                    <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" alt="JavaScript" style="width:50px;">
+                </div>
+                <h4>JavaScript</h4>
+            </div>
+        </div>
+
+        <div class="hexagon">
+            <div class="hexagon-inner">
+                <div class="hexagon-icon">
+                    <img src="https://img.icons8.com/?size=100&id=Lk9yC4HS5r3p&format=png&color=000000" alt="SQL" style="width:50px;">
+                </div>
+                <h4>SQL</h4>
+            </div>
+        </div>
+
+        <div class="hexagon">
+            <div class="hexagon-inner">
+                <div class="hexagon-icon">
+                    <img src="https://img.icons8.com/?size=100&id=40669&format=png&color=000000" alt="C++" style="width:50px;">
+                </div>
+                <h4>C++</h4>
+            </div>
+        </div>
+
+        <div class="hexagon">
+            <div class="hexagon-inner">
+                <div class="hexagon-icon">
+                    <img src="https://img.icons8.com/?size=100&id=90519&format=png&color=000000" alt="Spring Boot" style="width:50px;">
+                </div>
+                <h4>Spring Boot</h4>
+            </div>
+        </div>
+
+        <div class="hexagon">
+            <div class="hexagon-inner">
+                <div class="hexagon-icon">
+                    <img src="https://img.icons8.com/?size=100&id=1BC75jFEBED6&format=png&color=000000" alt=".NET" style="width:50px;">
+                </div>
+                <h4>.NET</h4>
+            </div>
+        </div>
+
+        <div class="hexagon">
+            <div class="hexagon-inner">
+                <div class="hexagon-icon">
+                    <img src="https://img.icons8.com/?size=100&id=jpa398oAm0WY&format=png&color=000000" alt="Symfony" style="width:50px;">
+                </div>
+                <h4>Symfony</h4>
+            </div>
+        </div>
+
+        <div class="hexagon">
+            <div class="hexagon-inner">
+                <div class="hexagon-icon">
+                    <img src="https://img.icons8.com/?size=100&id=20906&format=png&color=000000" alt="Git" style="width:50px;">
+                </div>
+                <h4>Git</h4>
+            </div>
+        </div>
+
+     
+
+      
+
+        <div class="hexagon">
+            <div class="hexagon-inner">
+                <div class="hexagon-icon">
+                    <img src="https://img.icons8.com/?size=100&id=13679&format=png&color=000000" alt="OpenStack" style="width:50px;">
+                </div>
+                <h4>Java</h4>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+   
+
+
+
+ <!-- Section 2: Diagonal Features -->
+    <section class="features" id="experience">
+        <div class="features-container">
+            <h2 class="section-title">Projets</h2>
+            <div class="diagonal-grid">
+                <div class="feature-row">
+                    <div class="feature-content glass">
+                        <div class="feature-icon">🎮</div>
+                        <h3>Jeu 2D avec Manette Arduino</h3>
+                         
+
+
+                  <p>
+    Projet de fin d’études réalisé en équipe : développement d’un jeu 2D en <strong>C++</strong> avec <strong>SDL</strong>, sous <strong>Ubuntu</strong>.  
+    Intégration d’une <strong>manette physique Arduino Uno</strong> pour le contrôle du jeu.
+  </p>
+  <ul>
+    <li>💻 <strong>Technologies :</strong> C++, SDL, Arduino Uno, Ubuntu, Makefile</li>
+    <li>🎨 <strong>Compétences :</strong> Conception graphique, intégration hardware/software</li>
+    <li>🏆 <strong>Récompense :</strong> 1<sup>ère</sup> place au <em>Bal des Projets</em> ESPRIT</li>
+     <div style="margin-top: 20px;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0ClfhIo7fnA" 
+            title="BanekTek Video" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  </ul>
+                    </div>
+                    <div class="feature-visual"></div>
+
+                </div>
+                
+                <div class="feature-row">
+                    <div class="feature-content glass">
+                        <div class="feature-icon">💬 </div>
+                        <h3>Forum Santé Mentale – Site Web</h3>
+                         <p>
+    Développement d’un site web type <strong>forum</strong> dédié à la <strong>santé mentale</strong>, conçu pour faciliter les échanges entre patients et professionnels.
+  </p>
+  <ul>
+    <li>👨‍⚕️ Profils de psychiatres avec spécialités, disponibilités et prise de rendez-vous</li>
+    <li>💬 Espaces de discussion par thème (anxiété, dépression, etc.)</li>
+    <li>📅 Système de rendez-vous en ligne avec gestion des horaires</li>
+    <li>⭐ Avis et évaluations laissés par les patients</li>
+    <li>🛠️ <strong>Technologies :</strong> PHP, MySQL, HTML, CSS, JavaScript</li>
+  </ul>
+</div>
+                    <div class="feature-visual glass"></div>
+                </div>
+                
+                <div class="feature-row">
+                    <div class="feature-content glass">
+                        <div class="feature-icon">🏦 </div>
+                        <h3>BanekTek – Application Bancaire (Web, Desktop & Mobile)</h3>
+               <p>
+    Développement d’une <strong>solution bancaire complète</strong> intégrant site web, application desktop et mobile. 
+    Gestion des <strong>clients, agences, comptes, transactions, virements et crédits</strong>, avec <strong>algorithme d’IA pour le credit scoring</strong> et <strong>authentification par reconnaissance faciale</strong>.
+  </p>
+  <ul>
+    <li>💻 <strong>Technologies :</strong> Symfony (PHP), HTML, CSS, JavaScript, MySQL, Java (desktop), IA (reconnaissance faciale), FlutterFlow, SQLite (mobile)</li>
+    <li>🧠 <strong>Fonctionnalités :</strong> Gestion complète bancaire, suivi des transactions, évaluation automatisée des crédits, sécurité via reconnaissance faciale, application mobile pour consultation et gestion des comptes</li>
+    <li>🏆 <strong>Distinction :</strong> 4<sup>ème</sup> place au <em>Bal des Projets</em> ESPRIT</li>
+  </ul>
+  <div style="margin-top: 20px;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/UWjHNUBa_8A" 
+            title="BanekTek Video" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+                    <div class="feature-visual glass"></div>
+                </div>
+
+            <div class="feature-row">
+                    <div class="feature-content glass">
+                        <div class="feature-icon">🩺</div>
+                        <h3>Application de Gestion Médicale – Banque BIAT</h3>
+           <p>
+    Développement d’une application pour <strong>moderniser et automatiser la gestion des consultations médicales et certificats</strong> du personnel. 
+    Gestion centralisée des données, suivi en temps réel des soins, et tableau de bord interactif pour des statistiques détaillées.
+  </p>
+  <ul>
+    <li>💻 <strong>Technologies :</strong> Symfony, JavaScript, HTML5, CSS, SQL, Excel</li>
+    <li>🧠 <strong>Fonctionnalités :</strong> 
+      <ul>
+        <li>Importation et mise à jour des données du personnel et des certificats médicaux</li>
+        <li>Suivi précis des consultations et soins en temps réel</li>
+        <li>Tableau de bord interactif avec statistiques sur consultations, certificats et types de maladies</li>
+        <li>Gestion simplifiée des certificats médicaux pour une meilleure visibilité</li>
+      </ul>
+    </li>
+    <li>🚀 <strong>Mise en production :</strong> Application performante et sécurisée</li>
+  </ul>
+</div>
+                    <div class="feature-visual glass"></div>
+                </div>
+                
+
+            </div>
+        </div>
+    </section>
+   
+
+
+    <!-- Section 5: Contact -->
+    <section class="box-container" id="contact">
+  <div class="box-container">
+    <div class="contact-info glass">
+     <h3>Informations personnelles</h3>
+<p>Retrouvez ici mes moyens de contact ainsi que mes profils professionnels.</p>
+
+      <div class="social-links">
+        <!-- Téléphone / WhatsApp -->
+        <a href="tel:+33758281841" class="glass" title="Téléphone / WhatsApp">
+          <img style="margin-right:5px;" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="24" height="24">
+            07 58 28 18 41
+        </a>
+
+        <!-- Email -->
+        <a href="mailto:hamzan@3il.fr" class="glass" title="Email">
+          <img style="margin-right:5px;" src="https://img.icons8.com/ios/50/new-post--v1.png" alt="Email" width="24" height="24">
+             hamzan@3il.fr
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/hamza-nasr-59ba50257/" target="_blank" class="glass" title="LinkedIn">
+          <img style="margin-right:5px;" src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn" width="24" height="24">
+           LinkedIn
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/HamzaNasr1" target="_blank" class="glass" title="GitHub">
+          <img style="margin-right:5px;" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="24" height="24">
+           GitHub
+        </a>
+
+        <!-- Adresse -->
+        <a href="https://www.google.com/maps/search/87000+Limoges,+France" target="_blank" class="glass" title="Adresse">
+          <img style="margin-right:5px;" src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Media_Viewer_Icon_-_Location.svg" alt="Adresse" width="24" height="24">
+            Limoges 87000, France
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+    <div class="footer-links">
+        <!-- Ajouter éventuellement liens vers réseaux/projets -->
+    </div>
+    <div class="footer-copyright">
+        <p>&copy; 2025 Hamza Nasr. Tous droits réservés.</p>
+    </div>
+    <div class="footer-design">
+        Design & Développement : <strong>Hamza Nasr</strong>
+    </div>
+</div>
+
+</div>
+
+
+    </footer>
+<script src="templatemo-neural-scripts.js"></script>
+</body>
+</html>
