@@ -1145,9 +1145,6 @@ https://templatemo.com/tm-597-neural-glass
         gap: 40px;
 		min-height: 720px;
     }
-    .feature-content{
-            transform: skew(0deg);
-    }
 
     .feature-row:nth-child(even) {
         flex-direction: column;
@@ -1286,6 +1283,9 @@ https://templatemo.com/tm-597-neural-glass
      max-width: 100%;
       justify-content: space-between; 
       align-items: center;
+    }
+    .feature-content{
+            transform: skew(0deg);
     }
     .hexagon-container {
         gap: 0px; /* Reduce gap since boxes are larger */
