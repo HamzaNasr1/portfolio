@@ -754,7 +754,10 @@ https://templatemo.com/tm-597-neural-glass
      background-image: url('images/projects/BIAT.jpg');
      background-size: 100%;
 }
-
+ .feature-row:nth-child(5) .feature-visual {
+     background-image: url('images/projects/marketing_manager.jpg');
+     background-size: 100%;
+}
  .feature-icon {
      font-size: 4rem;
      margin-bottom: 25px;
