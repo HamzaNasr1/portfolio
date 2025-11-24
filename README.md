@@ -72,3 +72,13 @@ Voici quelques projets mis en avant :
 - **LinkedIn :** https://www.linkedin.com/in/hamza-nasr-59ba50257/  
 - **GitHub :** https://github.com/HamzaNasr1  
 - **Localisation :** Limoges, France  
+### Banektek
+**Stack :** Symfony (PHP) • Twig/HTML • CSS • JavaScript • MySQL
+
+![PHP](https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=white)
+![Symfony](https://img.shields.io/badge/Symfony-black?logo=symfony&logoColor=white)
+![Twig](https://img.shields.io/badge/Twig-339933?logo=twig&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JS](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white)
